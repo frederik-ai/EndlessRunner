@@ -4,7 +4,7 @@ This project implements an endless runner game consisting of a player and an obs
 
 ## Authors
 
-Frederik Esau (username: frederikcpp)
+Frederik Esau (github username: frederikcpp)  
 Mail: inf20092@lehre.dhbw-stuttgart.de or f.esau@gmx.de
 
 ## Demo Video
@@ -15,13 +15,11 @@ Replace -h3eH4ubuno in the this .md by your YT video
 
 ## Description
 
-# TODO: FINISH THIS 
-As mentioned before, this game is settled inside the endless runner genre. Therefore The goal is to achieve a score that is as high as possible while there is virtually no limit as to how high of a score is at most achievable. **Put this somewhere at the mid/end section** There should be a practical limit, as the game speed is 10ms per frame at it's maximum peak. However, the drawing speed of the "Bitmap Display" tool is significantly higher than that, which limits the maximum game speed.
+As mentioned before, this game is settled inside the endless runner genre. Therefore The goal is to achieve a score that is as high as possible while there is virtually no limit as to how high of a score is at most achievable. This means that you cannot *beat* the game, as it is infinite.  
+When starting a game, you see a red rectangle on the left hand side of the 512x256 screen (seek "How to run" for more details) and a green rectangle on the right hand side. In the following description and in the program code the red rectangle is refered to as the 'player' and the green rectangle is refered to as the 'cactus'.  
+The cactus is the obstacle. It moves towards the player with an increasing amount of speed as the game moves on. If the cactus and the player overlap, i.e. they collide, the game is over. The player can jump by pressing 'spacebar' and thus prevent a collision. If a collision has been prevented and the cactus is at the left of the screen, it starts at the right side again, getting to its initial position and moving towards the player again. This is the inifite loop.  
 
-### 
-
-
-
+**Put this somewhere at the mid/end section** There should be a practical limit, as the game speed is 10ms per frame at it's maximum peak. However, the drawing speed of the "Bitmap Display" tool is significantly higher than that, which limits the maximum game speed.
 
 ### How to run
 
@@ -37,9 +35,9 @@ As mentioned before, this game is settled inside the endless runner genre. There
 
 #### Let the Bot play for you
 1. Open the file "start_game.asm"
-2. In line 12 change "BOT_ACTIVE 0" to "BOT_ACTIVE 1"
-... The next steps are as above for the human player. Note that you don't have to open the "Keyboard and Display MMIO Simulator", but if you choose to do it you can actually play yourself while the bot jumps for you if possible and if necesarry.
-Also: To only play as a human player again, change "BOT_ACTIVE 1" back to "BOT_ACTIVE 0".
+2. In line 12 change "BOT_ACTIVE 0" to "BOT_ACTIVE 1"  
+3. _... The next steps are as above for the human player. Note that you don't have to open the "Keyboard and Display MMIO Simulator", but if you choose to do it you can actually play yourself while the bot jumps for you if possible and if necesarry.
+Also: To only play as a human player again, change "BOT_ACTIVE 1" back to "BOT_ACTIVE 0"._
 
 ## Files
 Describe the content of each file of your application: e.g.
@@ -60,4 +58,5 @@ test/test1.asm - test9.asm # 9 unit tests for featureA
 
 
 ## Test
-Screenshot that shows succedded (unit) tests 
+#### Collision Handling (collision_handling.asm) ####
+<img width="363" alt="collision_handling_utest" src="https://user-images.githubusercontent.com/83597198/140101910-ca9ce438-2e4c-4105-a3eb-954f54a9719a.png">
