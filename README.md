@@ -59,4 +59,5 @@ test/test1.asm - test9.asm # 9 unit tests for featureA
 
 ## Test
 #### Collision Handling (collision_handling.asm) ####
-<img width="363" alt="collision_handling_utest" src="https://user-images.githubusercontent.com/83597198/140101910-ca9ce438-2e4c-4105-a3eb-954f54a9719a.png">
+<img width="363" alt="collision_handling_utest" src="https://user-images.githubusercontent.com/83597198/140101910-ca9ce438-2e4c-4105-a3eb-954f54a9719a.png"><img width="272" alt="read_userinput_utest" src="https://user-images.githubusercontent.com/83597198/140232305-daae9d3e-48f8-455f-9987-1cb22747508f.png">
+
