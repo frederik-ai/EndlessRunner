@@ -15,8 +15,8 @@ Replace -h3eH4ubuno in the this .md by your YT video
 
 ## Description
 
-As mentioned before, this game is settled inside the endless runner genre. Therefore The goal is to achieve a score that is as high as possible while there is virtually no limit as to how high of a score is at most achievable. This means that you cannot *beat* the game, as it is infinite.  
-When starting a game, you see a red rectangle on the left hand side of the 512x256 screen (seek "How to run" for more details) and a green rectangle on the right hand side. In the following description and in the program code the red rectangle is refered to as the 'player' and the green rectangle is refered to as the 'cactus'.  
+As mentioned before, this game is settled inside the endless runner genre. Therefore the goal is to achieve a score that is as high as possible while there is virtually no limit as to how high of a score is at most achievable. This means that you cannot *beat* the game, as it is infinite.  
+When starting a game, you see a red rectangle on the left hand side of the 512x256 screen and a green rectangle on the right hand side (seek "How to Run" for more details on the screen size). In the following description and in the program code the red rectangle is refered to as the 'player' and the green rectangle is refered to as the 'cactus'.  
 The cactus is the obstacle. It moves towards the player with an increasing amount of speed as the game moves on. If the cactus and the player overlap, i.e. they collide, the game is over. The player can jump by pressing 'spacebar' and thus prevent a collision. If a collision has been prevented and the cactus is at the left of the screen, it starts at the right side again, getting to its initial position and moving towards the player again. This is the inifite loop. Once the player loses, the achieved score is displayed in a new window.  
   
   
@@ -24,7 +24,9 @@ The cactus is the obstacle. It moves towards the player with an increasing amoun
 
 However, the game can also be played by a bot. The bot jumps automatically and, as it is intended, cannot lose, which means that the games are never ending until you stop the application.  
   
-**Note:** There should be a practical limit to the game speed as it is 10ms per frame at its maximum peak. However, the drawing speed of the "Bitmap Display" tool is significantly higher than that, which limits the maximum game speed. Depending on how fast the bitmap display draws, the game speedup is either quite significant or barely noticable. If latter is the case, try restarting rars as it becomes slower the longer you use it.  
+**Note:** There should be a practical limit to the game speed as it is 10ms per frame at its maximum peak. However, the drawing speed of the "Bitmap Display" tool is significantly higher than that, which limits the maximum game speed. Depending on how fast the bitmap display draws, the game speedup is either quite significant or barely noticable. If latter is the case, try restarting rars as it becomes slower the longer you use it.
+
+**Note:** For more info about specific parts of the game consult the READMEs of the specific folders (lib, src and test)
 
 ### How to run
 
