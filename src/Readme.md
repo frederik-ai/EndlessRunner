@@ -1,4 +1,4 @@
-# src: The main code #
+# src: The Main Code #
 
 These are the files where the actual implementation of different parts of the game is made. The game speed is calculated by multiplying a factor with the input reading rate (10ms per default), the factor becomes smaller each time the cactus moves, thus increasing the game speed. The input reading rate can be changed, aswell as the factor. Consult lib/lib_game_constants.asm if you want to change the values.
   
